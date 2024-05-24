@@ -1,6 +1,6 @@
-# My Web Development Portfolio
+# My Portfolio
 
-Welcome to my web development portfolio! Here, you'll find a showcase of my projects highlighting innovative design and seamless functionality.
+Welcome to my portfolio! Here, you'll find a showcase of my projects highlighting innovative design and seamless functionality.
 
 ## About
 
@@ -18,14 +18,10 @@ This portfolio is a testament to my expertise in web development, featuring resp
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap
-- [Any other technologies/frameworks/libraries you used]
 
-## How to Use
+## Framework Used
 
-1. Clone this repository.
-2. Open `index.html` in your web browser.
-3. Explore my projects and experience the seamless design and functionality firsthand.
+Next.js
 
 ## Feedback
 
