@@ -1,32 +1,33 @@
 "use client";
-import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "../Components/UI/hero-highlight";
+import React from "react";
+import { Vortex } from "./UI/vortex";
 
 export function HeroSection() {
   return (
-    <HeroHighlight>
-      <motion.h1
-        initial={{
-          opacity: 0,
-          y: 20,
-        }}
-        animate={{
-          opacity: 1,
-          y: [20, -5, 0],
-        }}
-        transition={{
-          duration: 0.5,
-          ease: [0.4, 0.0, 0.2, 1],
-        }}
-        className="text-3xl px-3 md:text-4xl lg:text-4xl font-semibold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
+    <div className="w-[calc(100%-4rem)] mx-auto rounded-md  h-screen overflow-hidden">
+      <Vortex
+        backgroundColor="black"
+        rangeY={800}
+        particleCount={500}
+        baseHue={120}
+        className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
       >
-        Hi, I&#39;m Sanskar Soni. Crafting Stunning Digital Experiences That Inspire, Engage, and Transform
-        {" "}
+        <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
+        Hi, I&apos;m Sanskar Soni
+        </h2>
+        <p className="text-grey text-sm md:text-2xl max-w-xl mt-6 text-center">
+        Crafting Stunning Digital Experiences That Inspire, Engage, and Transform
         <br />
-        <Highlight className="text-black dark:text-white p-2: my-2">
+        <br />
         Stunning Digital Experiences
-        </Highlight>
-      </motion.h1>
-    </HeroHighlight>
+        </p>
+        <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
+          <button className="px-4 py-2 bg-blue-600 hover:bg-blue-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
+            Order now
+          </button>
+          <button className="px-4 py-2  text-white ">Watch trailer</button>
+        </div>
+      </Vortex>
+    </div>
   );
 }
