@@ -16,7 +16,7 @@ export function HeroSection() {
         Hi, I&apos;m Sanskar Soni
         </h2>
         <p className="text-grey text-sm md:text-2xl max-w-xl mt-6 text-center">
-        Crafting Stunning Digital Experiences That Inspire, Engage, and Transform Hello Wolrd
+        Crafting Stunning Digital Experiences That Inspire, Engage, and Transform
         <br />
         <br />
         Stunning Digital Experiences
